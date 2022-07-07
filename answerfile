@@ -12,6 +12,7 @@ auto eth0
 iface eth0 inet dhcp
     hostname alpine-test
 "
+PROXYOPTS="none"
 
 # Search domain of example.com, Google public nameserver
 DNSOPTS="-d example.com 8.8.8.8"
@@ -33,5 +34,3 @@ DISKOPTS="-m sys /dev/sda"
 # Setup in /media/sdb1
 LBUOPTS="/media/sdb1"
 APKCACHEOPTS="/media/sdb1/cache"
-
-PROXYOPTS="none"
